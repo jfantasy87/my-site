@@ -1,0 +1,17 @@
+.headline {
+	text-align:center;
+	max-width:100%;
+	padding:2% 0 2% 0;
+	font-weight:300;
+	font-size:1.5rem;
+
+	@mixin atMedium {
+		max-width:80%;
+		font-size:1.5rem;
+		margin-top:0;
+		margin-bottom: 0;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:0;
+	}
+}

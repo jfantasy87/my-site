@@ -1,0 +1,53 @@
+.experience {
+	position:relative;
+	padding-bottom:4rem;
+	margin:0;
+
+	&__title {
+		font-size:2.5rem;
+		text-align:center;
+		font-weight:300;
+		margin:2.5rem auto 2.5rem auto;
+		background-color:$orange;
+		padding:2% 0;
+
+		@mixin atMedium {
+			background-color:white;
+			padding:0;
+		}
+	}
+
+	&__jacob-image {
+		width:100%;
+		height:auto;
+		box-shadow:2px 2px 7px black;
+		margin:0 auto 0 0;
+	}
+
+	&__text-content {
+		p {
+			font-size:1rem;
+			text-align:center justify;
+			font-weight:300;
+			line-height:1.5;
+			width:90%;
+			margin:2rem auto 0 auto;
+		}
+
+		@mixin atMedium{
+			p {
+				font-size:1.1rem;
+				font-weight: 300;
+				line-height: 1.65;
+				margin: 0 auto 1.8rem auto;
+				width:80%;
+				text-align:center justify;
+
+			}
+		}	
+
+		strong {
+			font-weight: 600;
+		}
+	}
+}
