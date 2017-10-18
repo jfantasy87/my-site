@@ -32,8 +32,8 @@
 	}
 
 	&__subtitle {
-		font-size:.6rem;
-		width:35%;
+		font-size:1rem;
+		max-width:35%;
 		margin-left:auto;
 		margin-right:auto;
 		color:#FFF;
@@ -47,7 +47,7 @@
 
 		@mixin atMedium {
 			font-size: 1.5rem;
-			width: 30%;
+			width: 37%;
 		}
 	}
 }
