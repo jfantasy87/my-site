@@ -2,6 +2,7 @@
 	position:relative;
 	padding-bottom:4rem;
 	margin:0;
+	border-bottom:10px solid $orange;
 
 	&__title {
 		font-size:2.5rem;
@@ -26,7 +27,7 @@
 
 	&__text-content {
 		p {
-			font-size:1.7rem;
+			font-size:2.0rem;
 			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;

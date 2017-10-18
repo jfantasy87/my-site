@@ -5,4 +5,13 @@
 	padding-right:20px;
 	margin-left:auto;
 	margin-right:auto;
+
+	&--future {
+		padding-left:30px;
+		padding-right:30px;
+		overflow:hidden;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+	}
 }

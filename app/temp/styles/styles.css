@@ -536,6 +536,7 @@ img {
 	position:relative;
 	padding-bottom:4rem;
 	margin:0;
+	border-bottom:10px solid #E7853A;
 }
 
 .experience__title {
@@ -564,7 +565,7 @@ img {
 	}
 
 .experience__text-content p {
-			font-size:1.7rem;
+			font-size:2.0rem;
 			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;
@@ -588,6 +589,15 @@ img {
 	margin-right:auto;
 }
 
+.wrapper--future {
+		padding-left:30px;
+		padding-right:30px;
+		overflow:hidden;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
 .row::after {
     content: "";
     clear: both;
@@ -601,9 +611,19 @@ img {
 			width:40%;
 		}
 
+			.row__medium-4-future {
+				float:left;
+				width:33.33%;
+			}
+
 		.row__medium-8 {
 			float:left;
 			width:60%;
+		}
+
+		.row__medium-6 {
+			float:left;
+			width:50%;
 		}
   }
 
@@ -612,20 +632,84 @@ img {
 	max-width:100%;
 	padding:2% 0 2% 0;
 	font-weight:300;
-	font-size:1.5rem;
+	font-size:3.8rem;
 }
 
 @media (min-width: 800px) {
 
 .headline {
 		max-width:80%;
-		font-size:1.5rem;
+		font-size:1.8rem;
 		margin-top:40px;
 		margin-bottom: 0;
 		margin-left:auto;
 		margin-right:auto;
 		padding-top:0
 }
+  }
+
+.future {
+	background-color:#9B2D31;
+	display:block;
+	margin:0;
+}
+
+.future__content-container {
+		text-align:center;
+		overflow:hidden;
+		width:100%;
+	}
+
+.future__language-title {
+		color:#FFF;
+		text-shadow:2px 2px 2px black;
+		font-weight:300;
+		text-align:center justify;
+		margin-left:auto;
+		margin-right:auto;
+		font-size:3rem;
+	}
+
+@media (min-width: 800px) {
+
+.future__language-title {
+			font-size:2rem
+	}
+  }
+
+.future__language-list {
+		list-style-type:none;
+		text-align:center;
+		color:#E7853A;
+		line-height: 1.5;
+		font-size:2rem;
+		width:100%;
+		padding-right:5.5%;
+	}
+
+@media (min-width: 800px) {
+
+.future__language-list {
+			font-size:1.8rem
+	}
+  }
+
+.future__title {
+		font-size:4.0rem;
+		margin:50px 0;
+		text-align:center;
+		font-weight:300;
+		color:#E7853A;
+		text-shadow:2px 2px 2px black;
+	}
+
+@media (min-width: 800px) {
+
+.future__title {
+			margin:40px 0 30px 0;
+			font-size:1rem;
+			font-size:2.5rem
+	}
   }
 
 

@@ -6,11 +6,21 @@
 		&__medium-4 {
 			float:left;
 			width:40%;
+
+			&-future {
+				float:left;
+				width:33.33%;
+			}
 		}
 
 		&__medium-8 {
 			float:left;
 			width:60%;
+		}
+
+		&__medium-6 {
+			float:left;
+			width:50%;
 		}
 	}
 
