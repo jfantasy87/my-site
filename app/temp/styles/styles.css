@@ -477,14 +477,14 @@ template {
 		text-shadow: 2px 1px 2px black;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 700px) {
 
 .aboutMe__title {
 			font-size:1.8rem
 	}
   }
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .aboutMe__title {
 			font-size:3.2rem
@@ -501,7 +501,7 @@ template {
 		text-shadow: 2px 1px 2px black;
 	}
 
-@media (min-width: 530px) {
+@media (min-width: 700px) {
 
 .aboutMe__subtitle {
 			width:100%;
@@ -509,7 +509,7 @@ template {
 	}
   }
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .aboutMe__subtitle {
 			font-size: 1.5rem;
@@ -532,6 +532,10 @@ img {
           box-sizing: border-box;
 }
 
+strong {
+	font-weight:600;
+}
+
 .experience {
 	position:relative;
 	padding-bottom:4rem;
@@ -548,7 +552,7 @@ img {
 		padding:2% 0;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .experience__title {
 			background-color:white;
@@ -564,19 +568,27 @@ img {
 		margin:0 auto 0 0;
 	}
 
+@media (min-width: 990px) {
+
+.experience__jacob-image {
+			max-width:90%
+	}
+  }
+
 .experience__text-content p {
 			font-size:2.0rem;
-			text-align:center justify;
+			text-align:justify;
 			font-weight:300;
 			line-height:2.0;
 			width:85%;
-			margin:1rem auto 60px auto;
+			margin:0 auto 60px auto;
 		}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 			.experience__text-content p{
 				font-size:.9rem;
 				margin-bottom:0;
+				letter-spacing:-.25px;
 			}
   }
 
@@ -604,7 +616,7 @@ img {
     display: table;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 		.row__medium-4 {
 			float:left;
@@ -635,7 +647,7 @@ img {
 	font-size:3.8rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .headline {
 		max-width:81%;
@@ -661,7 +673,7 @@ img {
 	}
 
 .future__language-title {
-		color:#FFF;
+		color:#E7853A;
 		text-shadow:2px 2px 2px black;
 		font-weight:300;
 		text-align:center justify;
@@ -670,7 +682,7 @@ img {
 		font-size:3rem;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .future__language-title {
 			font-size:2rem
@@ -680,7 +692,7 @@ img {
 .future__language-list {
 		list-style-type:none;
 		text-align:center;
-		color:#E7853A;
+		color:#FFF;
 		line-height: 1.5;
 		font-size:2rem;
 		width:100%;
@@ -689,7 +701,7 @@ img {
 		margin-left:auto;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .future__language-list {
 			font-size:1.8rem;
@@ -707,7 +719,7 @@ img {
 		text-shadow:2px 2px 2px black;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .future__title {
 			margin:40px 0 0 0;
@@ -724,7 +736,7 @@ img {
 		font-weight:300;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 990px) {
 
 .future__subtitle {
 			margin:0 0 50px 0;

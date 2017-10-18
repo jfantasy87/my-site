@@ -10,7 +10,7 @@
 	}
 
 	&__language-title {
-		color:#FFF;
+		color:$orange;
 		text-shadow:2px 2px 2px black;
 		font-weight:300;
 		text-align:center justify;
@@ -26,7 +26,7 @@
 	&__language-list {
 		list-style-type:none;
 		text-align:center;
-		color:$orange;
+		color:#FFF;
 		line-height: 1.5;
 		font-size:2rem;
 		width:100%;
