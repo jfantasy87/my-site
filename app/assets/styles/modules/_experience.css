@@ -18,7 +18,7 @@
 		}
 	}
 
-	&__jacob-image {
+	&__laptop-image {
 		width:100%;
 		height:auto;
 		box-shadow:2px 2px 7px black;
@@ -31,8 +31,8 @@
 
 	&__text-content {
 		p {
-			font-size:2.0rem;
-			text-align:justify;
+			font-size:2.4rem;
+			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;
 			width:85%;
@@ -44,7 +44,8 @@
 				font-size:.9rem;
 				margin-bottom:0;
 				letter-spacing:-.25px;
-			}
+				line-height:2.7;
+				text-indent:30px;			}
 		}
 
 

@@ -472,17 +472,10 @@ template {
 
 .aboutMe__title {
 		color:#FFF;
-		font-size:1rem;
-		font-weight: 300;
+		font-size:5rem;
+		font-weight:400;
 		text-shadow: 2px 1px 2px black;
 	}
-
-@media (min-width: 700px) {
-
-.aboutMe__title {
-			font-size:1.8rem
-	}
-  }
 
 @media (min-width: 990px) {
 
@@ -492,22 +485,14 @@ template {
   }
 
 .aboutMe__subtitle {
-		font-size:1rem;
-		max-width:35%;
+		font-size:3rem;
+		max-width:70%;
 		margin-left:auto;
 		margin-right:auto;
 		color:#FFF;
 		font-weight: 300;
 		text-shadow: 2px 1px 2px black;
 	}
-
-@media (min-width: 700px) {
-
-.aboutMe__subtitle {
-			width:100%;
-			font-size:1rem
-	}
-  }
 
 @media (min-width: 990px) {
 
@@ -536,6 +521,17 @@ strong {
 	font-weight:600;
 }
 
+u {
+	text-decoration: none;
+	border-top:solid;
+	border-bottom:solid;
+}
+
+.fa {
+	color:#FED47B;
+	text-shadow:2px 1px 5px black;
+}
+
 .experience {
 	position:relative;
 	padding-bottom:4rem;
@@ -560,7 +556,7 @@ strong {
 	}
   }
 
-.experience__jacob-image {
+.experience__laptop-image {
 		width:100%;
 		height:auto;
 		-webkit-box-shadow:2px 2px 7px black;
@@ -570,14 +566,14 @@ strong {
 
 @media (min-width: 990px) {
 
-.experience__jacob-image {
+.experience__laptop-image {
 			max-width:90%
 	}
   }
 
 .experience__text-content p {
-			font-size:2.0rem;
-			text-align:justify;
+			font-size:2.4rem;
+			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;
 			width:85%;
@@ -589,7 +585,8 @@ strong {
 				font-size:.9rem;
 				margin-bottom:0;
 				letter-spacing:-.25px;
-			}
+				line-height:2.7;
+				text-indent:30px;			}
   }
 
 .wrapper {
@@ -628,14 +625,14 @@ strong {
 				width:33.33%;
 			}
 
-		.row__medium-8 {
-			float:left;
-			width:60%;
-		}
-
 		.row__medium-6 {
 			float:left;
 			width:50%;
+		}
+
+		.row__medium-8 {
+			float:left;
+			width:60%;
 		}
   }
 
@@ -664,6 +661,7 @@ strong {
 	background-color:#9B2D31;
 	display:block;
 	margin:0;
+	border-bottom:10px solid #E7853A;
 }
 
 .future__content-container {
@@ -715,7 +713,7 @@ strong {
 		margin-bottom:0;
 		text-align:center;
 		font-weight:300;
-		color:#E7853A;
+		color:#FED47B;
 		text-shadow:2px 2px 2px black;
 	}
 
@@ -743,6 +741,83 @@ strong {
 			font-size:1rem
 	}
   }
+
+.aspirations {
+	background-color:#FED47B;
+}
+
+@media (min-width: 990px) {
+
+.aspirations {
+		background: url('/assets/images/coffee.jpg') top center no-repeat;
+		background-size:cover
+}
+  }
+
+.aspirations__title {
+		text-align:center;
+		font-size:3rem;
+		font-weight:300;
+	}
+
+@media (min-width: 990px) {
+
+.aspirations__title {
+			color:#FFF
+	}
+  }
+
+.aspirations__headline {
+		text-align: center;
+		font-weight:300;
+		font-size:4rem;
+		padding-top:20px;
+		text-shadow:2px 2px 2px black;
+		
+	}
+
+@media (min-width: 990px) {
+
+.aspirations__headline {
+			color:#FFF;
+			font-size:2.5rem
+		
+	}
+  }
+
+.aspirations__text-content p {
+			line-height: 2;
+			font-size:2.8rem;
+			text-align:center justify;
+			padding:0 2% 2% 2%;
+			width:100%;
+			font-weight:300;
+		}
+
+@media (min-width: 990px) {
+
+.aspirations__text-content p {
+				color:#FFF;
+				font-size:1.4rem
+		}
+  }
+
+.aspirations__jacob-image {
+		width:100%;
+		-webkit-box-shadow:2px 2px 5px black;
+		        box-shadow:2px 2px 5px black;
+	}
+
+@media (min-width: 990px) {
+
+.aspirations__jacob-image {
+			width:80%
+	}
+  }
+
+.page-section {
+	padding:20px 0;
+}
 
 
 

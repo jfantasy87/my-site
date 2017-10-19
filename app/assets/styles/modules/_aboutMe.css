@@ -18,13 +18,9 @@
 
 	&__title {
 		color:#FFF;
-		font-size:1rem;
-		font-weight: 300;
+		font-size:5rem;
+		font-weight:400;
 		text-shadow: 2px 1px 2px black;
-
-		@mixin atSmall {
-			font-size:1.8rem;
-		}
 
 		@mixin atMedium {
 			font-size:3.2rem;
@@ -32,18 +28,13 @@
 	}
 
 	&__subtitle {
-		font-size:1rem;
-		max-width:35%;
+		font-size:3rem;
+		max-width:70%;
 		margin-left:auto;
 		margin-right:auto;
 		color:#FFF;
 		font-weight: 300;
 		text-shadow: 2px 1px 2px black;
-
-		@mixin atSmall {
-			width:100%;
-			font-size:1rem;
-		}
 
 		@mixin atMedium {
 			font-size: 1.5rem;

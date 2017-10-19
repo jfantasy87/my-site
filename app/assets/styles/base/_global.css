@@ -15,3 +15,14 @@ img {
 strong {
 	font-weight:600;
 }
+
+u {
+	text-decoration: none;
+	border-top:solid;
+	border-bottom:solid;
+}
+
+.fa {
+	color:$sunshine;
+	text-shadow:2px 1px 5px black;
+}

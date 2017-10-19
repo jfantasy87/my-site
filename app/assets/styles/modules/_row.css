@@ -13,14 +13,14 @@
 			}
 		}
 
-		&__medium-8 {
-			float:left;
-			width:60%;
-		}
-
 		&__medium-6 {
 			float:left;
 			width:50%;
+		}
+
+		&__medium-8 {
+			float:left;
+			width:60%;
 		}
 	}
 
