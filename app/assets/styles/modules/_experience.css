@@ -2,14 +2,14 @@
 	position:relative;
 	padding-bottom:4rem;
 	margin:0;
-	border-bottom:10px solid $orange;
+	border-bottom:10px solid $sunshine;
 
 	&__title {
 		font-size:2.5rem;
 		text-align:center;
 		font-weight:300;
 		margin:2.5rem auto 2.5rem auto;
-		background-color:$orange;
+		background-color:rgba($orange, .8);
 		padding:2% 0;
 
 		@mixin atMedium {

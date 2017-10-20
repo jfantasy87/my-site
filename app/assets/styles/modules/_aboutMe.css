@@ -1,11 +1,21 @@
 .aboutMe {
 	position: relative;
 	margin-bottom: 0;
-	
+	background-color:$brickRed;
+	height:1000px;
+	border-bottom:10px solid $sunshine;
+
+	&__bgImage {
+		display:none;
+	}
+
+	@mixin atMedium {
+		height:auto;
 	&__bgImage {	
 		display:block;	
 		margin-bottom: 0;
 	}
+}
 
 	&__text-content {
 		text-align:center;

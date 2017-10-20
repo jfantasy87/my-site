@@ -2,7 +2,7 @@
 	background-color:$brickRed;
 	display:block;
 	margin:0;
-	border-bottom:10px solid $orange;
+	border-bottom:10px solid $sunshine;
 
 	&__content-container {
 		text-align:center;

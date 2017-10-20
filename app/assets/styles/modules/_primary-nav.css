@@ -1,0 +1,28 @@
+.primary-nav {
+
+	height:30px;
+
+	&--pull-right {
+		float:right;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+		top:50%;
+		transform:translateY(100%);
+	}
+
+	li {
+		list-style:none;
+		float:left;
+		margin-right:20px;
+		cursor:pointer;
+	}
+
+	a {
+		color:#FFF;
+		text-decoration:none;
+	}
+}
