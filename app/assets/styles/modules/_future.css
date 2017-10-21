@@ -1,8 +1,7 @@
 .future {
-	background-color:$brickRed;
+	background-color:$silver;
 	display:block;
 	margin:0;
-	border-bottom:10px solid $sunshine;
 
 	&__content-container {
 		text-align:center;
@@ -11,8 +10,8 @@
 	}
 
 	&__language-title {
-		color:$orange;
-		text-shadow:2px 2px 2px black;
+		color:$purple;
+		text-shadow:2px 2px 2px gray;
 		font-weight:300;
 		text-align:center justify;
 		margin-left:auto;
@@ -28,15 +27,18 @@
 		list-style-type:none;
 		text-align:center;
 		color:#FFF;
-		line-height: 1.5;
+		line-height: 2;
 		font-size:2rem;
+		height:auto;
 		width:100%;
-		padding-right:38px;
+		padding:20px 0px 20px 0;
 		margin-right:auto;
 		margin-left:auto;
+		background-color:rgba($purple, .3);
+		border-radius:15px;
 
 		@mixin atMedium {
-			font-size:1.8rem;
+			font-size:1rem;
 			max-width:90%;
 		}
 	}
@@ -47,8 +49,8 @@
 		margin-bottom:0;
 		text-align:center;
 		font-weight:300;
-		color:$sunshine;
-		text-shadow:2px 2px 2px black;
+		color:$purple;
+		text-shadow:2px 2px 2px gray;
 
 		@mixin atMedium {
 			margin:40px 0 0 0;

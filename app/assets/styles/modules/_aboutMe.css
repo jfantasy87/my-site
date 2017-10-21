@@ -1,9 +1,9 @@
 .aboutMe {
 	position: relative;
 	margin-bottom: 0;
-	background-color:$brickRed;
+	background-color:$silver;
 	height:1000px;
-	border-bottom:10px solid $sunshine;
+	border-bottom:10px solid $purple;
 
 	&__bgImage {
 		display:none;
@@ -48,7 +48,7 @@
 
 		@mixin atMedium {
 			font-size: 1.5rem;
-			width: 37%;
+			width: 30%;
 		}
 	}
 }

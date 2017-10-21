@@ -1,7 +1,7 @@
 .aspirations {
 	background-color:#FFF;
 	@mixin atMedium {
-		background: url('/assets/images/coffee.jpg') top center no-repeat;
+		background: url('#') top center no-repeat;
 		background-size:cover;
 	}
 
@@ -21,10 +21,8 @@
 		font-weight:300;
 		font-size:4rem;
 		padding-top:20px;
-		text-shadow:2px 2px 2px gray;
 
 		@mixin atMedium {
-			color:#FFF;
 			font-size:2.5rem;
 		}
 		
@@ -42,7 +40,6 @@
 
 
 			@mixin atMedium {
-				color:#FFF;
 				font-size:1.4rem;
 			}
 		}
