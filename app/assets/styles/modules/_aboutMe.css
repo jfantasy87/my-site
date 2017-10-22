@@ -1,7 +1,7 @@
 .aboutMe {
 	position: relative;
 	margin-bottom: 0;
-	background-color:$silver;
+	background-color:#999;
 	height:1000px;
 	border-bottom:10px solid $purple;
 
@@ -39,7 +39,7 @@
 
 	&__subtitle {
 		font-size:3rem;
-		max-width:70%;
+		width:80%;
 		margin-left:auto;
 		margin-right:auto;
 		color:#FFF;
