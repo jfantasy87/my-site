@@ -1090,11 +1090,12 @@ u {
 
 .primary-nav li {
 		list-style:none;
-		margin-right:40px;
+		margin-right:20px;
 		cursor:pointer;
 		display:inline-block;
 		margin-top:30px;
 		background-color: rgba(66,39,50, .7);
+		padding:10px 0;
 	}
 
 @media (min-width: 990px) {
@@ -1104,7 +1105,8 @@ u {
 			display:block;
 			margin-top:0;
 			margin-right:20px;
-			background-color:transparent
+			background-color:transparent;
+			padding:0
 	}
   }
 
@@ -1123,6 +1125,30 @@ u {
 			padding:0
 	}
   }
+
+.footer__content {
+		background-color:#422732;
+		text-align:center;
+		color:#FFF;
+		width:100%;
+		padding:10px 0;
+
+	}
+
+.footer__content p {
+			display:inline-block;
+			font-weight:300;
+		}
+
+.footer__content a {
+			padding:8px 20px;
+			background-color:#C1BBB1;
+			color:#FFF;
+			cursor:pointer;
+			margin-left:25px;
+			text-shadow:1px 1px 1px gray;
+			font-size:1.2rem;
+		}
 
 
 

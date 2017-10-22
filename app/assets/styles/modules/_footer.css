@@ -1,0 +1,26 @@
+.footer {
+	
+	&__content {
+		background-color:$purple;
+		text-align:center;
+		color:#FFF;
+		width:100%;
+		padding:10px 0;
+
+		p {
+			display:inline-block;
+			font-weight:300;
+		}
+
+		a {
+			padding:8px 20px;
+			background-color:$silver;
+			color:#FFF;
+			cursor:pointer;
+			margin-left:25px;
+			text-shadow:1px 1px 1px gray;
+			font-size:1.2rem;
+		}
+
+	}
+}
