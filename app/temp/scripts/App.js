@@ -89,7 +89,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); //ECMAScript 6
 
 var _jquery = __webpack_require__(2);
 
@@ -103,6 +103,7 @@ var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
 
+		//Constructor identifying classes
 		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
 		this.menuContent = (0, _jquery2.default)(".site-header__menu");
@@ -112,11 +113,13 @@ var MobileMenu = function () {
 	_createClass(MobileMenu, [{
 		key: "events",
 		value: function events() {
+			//Classes triggered by click event
 			this.menuIcon.click(this.toggleTheMenu.bind(this));
 		}
 	}, {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
+			//Toggle new classes when on click event
 			this.menuContent.toggleClass("site-header__menu--is-visible");
 			this.siteHeader.toggleClass("site-header--is-expanded");
 			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
