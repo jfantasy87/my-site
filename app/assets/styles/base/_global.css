@@ -25,3 +25,12 @@ u {
 	color:$silver;
 	text-shadow:2px 1px 5px black;
 }
+
+hr {
+	background-color:black;
+	margin:350px 0 10px 0;
+
+	@mixin atMedium {
+		margin:450px 0 10px 0;
+	}
+}

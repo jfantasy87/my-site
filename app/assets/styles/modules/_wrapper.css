@@ -1,4 +1,5 @@
 .wrapper {
+
 	max-width: 1200px;
 	overflow:hidden;
 	padding-left:20px;
@@ -20,5 +21,9 @@
 		overflow:hidden;
 		margin-left:auto;
 		margin-right:auto;
+	}
+
+	&--lighthouse-image {
+		padding:0;
 	}
 }

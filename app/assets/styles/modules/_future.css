@@ -4,7 +4,10 @@
 	margin:0;
 
 	@mixin atMedium{
-		background-color:$silver;
+		background-image:url("/assets/images/mac-desk.jpg");
+		background-size: cover;
+		background-repeat:none;
+		border:solid 20px $purple;
 	}
 
 	&__content-container {
@@ -63,8 +66,8 @@
 		margin-bottom:0;
 		text-align:center;
 		font-weight:300;
-		color:$purple;
-		text-shadow:2px 2px 2px gray;
+		color:#FFF;
+		
 
 		@mixin atMedium {
 			margin:40px 0 0 0;

@@ -544,6 +544,18 @@ u {
 	text-shadow:2px 1px 5px black;
 }
 
+hr {
+	background-color:black;
+	margin:350px 0 10px 0;
+}
+
+@media (min-width: 990px) {
+
+hr {
+		margin:450px 0 10px 0
+}
+  }
+
 .experience {
 	position:relative;
 	margin:0;
@@ -560,29 +572,39 @@ u {
 @media (min-width: 990px) {
 
 .experience__laptop-image {
-			max-width:90%
+			max-width:90%;
+			margin-top:10%
 	}
   }
 
-.experience__text-content p {
+.experience__text-content {
+		
 			font-size:2.4rem;
 			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;
 			width:85%;
 			margin:0 auto 60px auto;
-		}
+
+
+	}
 
 @media (min-width: 990px) {
-			.experience__text-content p{
+
+.experience__text-content {
+			
 				font-size:.9rem;
-				margin-bottom:0;
+				margin:0 auto 0 auto;
 				letter-spacing:-.25px;
 				line-height:2.7;
-				text-indent:30px;			}
+				text-indent:30px
+
+
+	}
   }
 
 .wrapper {
+
 	max-width: 1200px;
 	overflow:hidden;
 	padding-left:20px;
@@ -607,6 +629,10 @@ u {
 		margin-right:auto;
 	}
 
+.wrapper--lighthouse-image {
+		padding:0;
+	}
+
 .row::after {
     content: "";
     clear: both;
@@ -614,6 +640,11 @@ u {
   }
 
 @media (min-width: 990px) {
+
+.row {
+		padding:0
+
+}
 
 		.row__medium-4 {
 			float:left;
@@ -666,7 +697,10 @@ u {
 @media (min-width: 990px) {
 
 .future {
-		background-color:#C1BBB1
+		background-image:url("/assets/images/mac-desk.jpg");
+		background-size: cover;
+		background-repeat:none;
+		border:solid 20px #422732
 }
   }
 
@@ -732,8 +766,7 @@ u {
 		margin-bottom:0;
 		text-align:center;
 		font-weight:300;
-		color:#422732;
-		text-shadow:2px 2px 2px gray;
+		color:#FFF;
 	}
 
 @media (min-width: 990px) {
@@ -759,18 +792,6 @@ u {
 			margin:0 0 50px 0;
 			font-size:1rem
 	}
-  }
-
-.aspirations {
-	background-color:#FFF;
-}
-
-@media (min-width: 990px) {
-
-.aspirations {
-		background: url('#') top center no-repeat;
-		background-size:cover
-}
   }
 
 .aspirations__title {
@@ -802,20 +823,27 @@ u {
 	}
   }
 
-.aspirations__text-content p {
+.aspirations__text-content {
+
 			line-height: 2;
-			font-size:2.8rem;
-			text-align:center justify;
-			padding:0 2% 2% 2%;
+			font-size:2.4rem;
 			width:100%;
 			font-weight:300;
-		}
+			display:block;
+			text-align:justify;
+			padding:20px 30px;
+	}
 
 @media (min-width: 990px) {
 
-.aspirations__text-content p {
-				font-size:1.4rem
-		}
+.aspirations__text-content {
+				font-size:.9rem;
+				text-align:justify;
+				width:100%;
+				letter-spacing:1.5;
+				text-indent:30px;
+				padding:0 50px 0 10px
+	}
   }
 
 .aspirations__jacob-image {
@@ -828,6 +856,48 @@ u {
 
 .aspirations__jacob-image {
 			width:80%
+	}
+  }
+
+.aspirations__text-content--below-image {
+		display:block;
+		line-height: 2;
+		font-size:2.4rem;
+		text-align:justify;
+		margin:30px auto 30px auto;
+		width:85%;
+	}
+
+@media (min-width: 990px) {
+
+.aspirations__text-content--below-image {
+			float:left;
+			font-size:.9rem;
+			padding:0 8% 0 8%;
+			width:100%;
+			letter-spacing:1.5;
+			text-indent:30px
+	}
+  }
+
+.aspirations__text-content--below-image__headline {
+			text-align: center;
+		}
+
+.aspirations__lighthouse-image-container {
+		position:absolute;
+		left:0;
+		height:auto;
+		width:100%;
+		-webkit-box-shadow:0 0 15px black;
+		        box-shadow:0 0 15px black;
+	}
+
+@media (min-width: 990px) {
+
+.aspirations__lighthouse-image-container {
+			-webkit-transform:translateY(650px);
+			        transform:translateY(650px)
 	}
   }
 
@@ -937,7 +1007,7 @@ u {
 
 .site-header__btn-container {
 		background-color: rgba(66,39,50, .7);
-		padding:8px 20px;
+		padding:8px 20px 8px 14px;
 		color:#FFF;
 		cursor:pointer;
 		width:88px;
@@ -946,6 +1016,10 @@ u {
 		margin-right:auto;
 		-webkit-transform:scale(3);
 		        transform:scale(3);
+		-webkit-box-shadow:inset 0 0 8px white;
+		        box-shadow:inset 0 0 8px white;
+		border:solid white 1px;
+		border-radius:20px;
 	}
 
 @media (min-width: 990px) {
@@ -956,7 +1030,11 @@ u {
 			margin:10px 0;
 			-webkit-transform:scale(1);
 			        transform:scale(1);
-			background-color:#C1BBB1
+			background-color:#C1BBB1;
+			-webkit-box-shadow:inset 0 0 15px #FFF;
+			        box-shadow:inset 0 0 15px #FFF;
+			border:solid .5px;
+			border-radius:20px
 	}
   }
 
@@ -1149,6 +1227,16 @@ u {
 			text-shadow:1px 1px 1px gray;
 			font-size:1.2rem;
 		}
+
+@media (min-width: 990px) {
+
+.footer__content a {
+				-webkit-box-shadow:inset 0 0 5px #422732;
+				        box-shadow:inset 0 0 5px #422732;
+				border:solid 1px;
+				border-radius:20px
+		}
+  }
 
 
 

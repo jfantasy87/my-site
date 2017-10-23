@@ -1,9 +1,4 @@
 .aspirations {
-	background-color:#FFF;
-	@mixin atMedium {
-		background: url('#') top center no-repeat;
-		background-size:cover;
-	}
 
 	&__title {
 		text-align:center;
@@ -30,19 +25,23 @@
 
 	&__text-content {
 
-			p {
 			line-height: 2;
-			font-size:2.8rem;
-			text-align:center justify;
-			padding:0 2% 2% 2%;
+			font-size:2.4rem;
 			width:100%;
 			font-weight:300;
+			display:block;
+			text-align:justify;
+			padding:20px 30px;
 
 
 			@mixin atMedium {
-				font-size:1.4rem;
+				font-size:.9rem;
+				text-align:justify;
+				width:100%;
+				letter-spacing:1.5;
+				text-indent:30px;
+				padding:0 50px 0 10px;
 			}
-		}
 	}
 
 	&__jacob-image {
@@ -51,6 +50,40 @@
 
 		@mixin atMedium {
 			width:80%;
+		}
+	}
+
+	&__text-content--below-image {
+		display:block;
+		line-height: 2;
+		font-size:2.4rem;
+		text-align:justify;
+		margin:30px auto 30px auto;
+		width:85%;
+
+		@mixin atMedium {
+			float:left;
+			font-size:.9rem;
+			padding:0 8% 0 8%;
+			width:100%;
+			letter-spacing:1.5;
+			text-indent:30px;
+		}
+
+		&__headline {
+			text-align: center;
+		}
+	}
+
+	&__lighthouse-image-container {
+		position:absolute;
+		left:0;
+		height:auto;
+		width:100%;
+		box-shadow:0 0 15px black;
+
+		@mixin atMedium {
+			transform:translateY(650px);
 		}
 	}
 }

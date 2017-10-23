@@ -10,26 +10,27 @@
 
 		@mixin atMedium {
 			max-width:90%;
+			margin-top:10%;
 		}
 	}
 
 	&__text-content {
-		p {
+		
 			font-size:2.4rem;
 			text-align:center justify;
 			font-weight:300;
 			line-height:2.0;
 			width:85%;
 			margin:0 auto 60px auto;
-		}
+		
 
 		@mixin atMedium {
-			p{
+			
 				font-size:.9rem;
-				margin-bottom:0;
+				margin:0 auto 0 auto;
 				letter-spacing:-.25px;
 				line-height:2.7;
-				text-indent:30px;			}
+				text-indent:30px;		
 		}
 
 
