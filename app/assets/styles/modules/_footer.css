@@ -22,7 +22,7 @@
 			font-size:1.2rem;
 
 			@mixin atMedium{
-				box-shadow:inset 0 0 5px $purple;
+				box-shadow:inset 0 0 5px #FFF;
 				border:solid 1px;
 				border-radius:20px;
 			}

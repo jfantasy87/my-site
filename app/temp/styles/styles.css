@@ -937,7 +937,7 @@ u {
 }
 
 .site-header {
-	position:fixed;
+	position:absolute;
 	z-index:2;
 	width:100%;
 	-webkit-transition:background-color .4s ease-out;
@@ -955,7 +955,8 @@ u {
 @media (min-width: 990px) {
 
 .site-header {
-		background-color: rgba(66,39,50, .7)
+		background-color: rgba(66,39,50, .7);
+		position:fixed
 
 
 }
@@ -964,10 +965,10 @@ u {
 .site-header__menu-icon {
 		height:75px;
 		width:75px;
-		position:absolute;
 		top:30px;
 		right:30px;
 		z-index:5;
+		position:absolute;
 	}
 
 @media (min-width: 990px) {
@@ -984,7 +985,7 @@ u {
 			left: 0;
 			width: 75px;
 			height: 15px;
-			background-color:#FFF;
+			background-color:#422732;
 			-webkit-transform-origin:0 0;
 			        transform-origin:0 0;
 			-webkit-transition: -webkit-transform .3s ease-out;
@@ -999,7 +1000,7 @@ u {
 			left: 0;
 			width: 75px;
 			height: 15px;
-			background-color:#FFF;
+			background-color:#422732;
 			-webkit-transition: all .3s ease-out;
 			transition: all .3s ease-out;
 			-webkit-transform-origin:0 50%;
@@ -1013,7 +1014,7 @@ u {
 			left: 0;
 			width: 75px;
 			height: 15px;
-			background-color:#FFF;
+			background-color:#422732;
 			-webkit-transform-origin:0 100%;
 			        transform-origin:0 100%;
 			-webkit-transition: -webkit-transform .3s ease-out;
@@ -1078,6 +1079,38 @@ u {
 			text-shadow:1px 1px 1px gray;
 		}
 
+/* class added to shrink title wrapper on page scroll */
+
+@media (min-width: 990px) {
+
+.site-header .site-header__title-wrapper--fitted {
+			background-color:transparent;
+			width:23%;
+			height:auto;
+			padding:0;
+			-webkit-box-shadow:none;
+			        box-shadow:none;
+			position:relative;
+			-webkit-transition: all .3s ease-out;
+			transition: all .3s ease-out;
+			border-radius:0
+		}
+
+			.site-header .site-header__title-wrapper--fitted h1 {
+				margin:2% 0 0 0;
+				padding:0;
+				font-size:2.3rem;
+				-webkit-transition:.3s ease-out;
+				transition:.3s ease-out;
+			}
+
+			.site-header .site-header__title-wrapper--fitted h3 {
+				display:none;
+				-webkit-transition:.3s ease-out;
+				transition:.3s ease-out;
+			}
+  }
+
 .site-header__title-wrapper {
 		color:#FFF;
 		float:left;
@@ -1092,6 +1125,8 @@ u {
 		-webkit-box-shadow:0 0 20px black;
 		        box-shadow:0 0 20px black;
 		z-index:5;
+		-webkit-transition:.3s ease-out;
+		transition:.3s ease-out;
 	}
 
 @media (min-width: 990px) {
@@ -1265,8 +1300,8 @@ u {
 @media (min-width: 990px) {
 
 .footer__content a {
-				-webkit-box-shadow:inset 0 0 5px #422732;
-				        box-shadow:inset 0 0 5px #422732;
+				-webkit-box-shadow:inset 0 0 5px #FFF;
+				        box-shadow:inset 0 0 5px #FFF;
 				border:solid 1px;
 				border-radius:20px
 		}
