@@ -76,17 +76,16 @@
 	}
 
 	&__btn-container {
-		background-color:rgba($purple, .7);
+		background-color:rgba($silver, .7);
 		padding:8px 20px 8px 14px;
 		color:#FFF;
 		cursor:pointer;
 		width:88px;
-		margin-top:80px;
+		margin-top:15%;
 		margin-left:auto;
 		margin-right:auto;
 		transform:scale(3);
 		box-shadow:inset 0 0 8px white;
-		border:solid white 1px;
 		border-radius:20px;
 
 		@mixin atMedium {
