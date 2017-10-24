@@ -21,12 +21,17 @@ u {
 	border-bottom:solid;
 }
 
-hr {
+.hr {
 	background-color:black;
 	margin:350px 0 10px 0;
 
 	@mixin atMedium {
 		margin:450px 0 10px 0;
+	}
+
+	&--web-title {
+		background-color:black;
+		margin:0 0 0 0;
 	}
 }
 

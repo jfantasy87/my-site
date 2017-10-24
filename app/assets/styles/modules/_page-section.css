@@ -1,3 +1,5 @@
+/*Gives each section a top and bottom gap to start.*/
+
 .page-section {
 	padding:40px 0;
 }

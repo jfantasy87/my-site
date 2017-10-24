@@ -4,6 +4,7 @@
 	width:100%;
 	transition:background-color .4s ease-out;
 
+	/*class added/targeted by jQuery to reveal site-header*/
 	&--is-expanded{
 		background-color: rgba($silver, .6);
 	}
@@ -59,6 +60,8 @@
 			transition: transform .3s ease-out;
 		}
 	}
+
+	/*icon used to close the site header after expanding */
 
 	&__menu-icon--close-x {
 		&::before {

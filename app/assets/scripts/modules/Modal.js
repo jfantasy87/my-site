@@ -1,3 +1,5 @@
+														//ECMA script 6
+
 import $ from 'jquery';
 
 class Modal {
