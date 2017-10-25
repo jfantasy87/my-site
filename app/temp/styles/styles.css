@@ -699,7 +699,7 @@ u {
 @media (min-width: 990px) {
 
 .future {
-		background-image:url("/assets/images/mac-desk.jpg");
+		background-image:url("../../assets/images/mac-desk.jpg");
 		background-size: cover;
 		background-repeat:none;
 		border:solid 20px #422732

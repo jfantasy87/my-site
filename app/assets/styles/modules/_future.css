@@ -4,7 +4,7 @@
 	margin:0;
 
 	@mixin atMedium{
-		background-image:url("/assets/images/mac-desk.jpg");
+		background-image:url("../../assets/images/mac-desk.jpg");
 		background-size: cover;
 		background-repeat:none;
 		border:solid 20px $purple;
