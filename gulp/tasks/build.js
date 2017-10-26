@@ -9,7 +9,7 @@ browserSync = require('browser-sync').create();
 
 gulp.task('previewDist', function() {
 	browserSync.init({
-		notify:false,
+		notify: false,
 		server: {
 			baseDir: "docs"
 		}
@@ -36,16 +36,16 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 });
 
 gulp.task('optimizeImages',['deleteDistFolder'], function() {
-	return gulp.src(['./app/assets/images/**/*'])
+	return gulp.src('./app/assets/images/**/*')
 	.pipe(imagemin({
-		progressive:true,
+		progressive: true,
 		interlaced: true,
 		multipass: true
 	}))
 	.pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task('useminTrigger', ['deleteDistFolder'], function() {
+gulp.task('useMinTrigger', ['deleteDistFolder'], function() {
 	gulp.start("usemin");
 });
 
@@ -58,4 +58,4 @@ gulp.task('usemin',['styles','scripts'], function() {
 	.pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder','copyGeneralFiles','optimizeImages', 'useminTrigger']);
+gulp.task('build', ['deleteDistFolder','copyGeneralFiles','optimizeImages', 'useMinTrigger']);
