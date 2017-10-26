@@ -450,6 +450,47 @@ template {
   display: none;
 }
 
+body {
+	font-family:'Georgia', sans-serif;
+	color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+strong {
+	font-weight:600;
+}
+
+u {
+	text-decoration: none;
+	border-bottom:solid;
+}
+
+.hr {
+	background-color:black;
+	margin:350px 0 10px 0;
+}
+
+@media (min-width: 990px) {
+
+.hr {
+		margin:450px 0 10px 0
+}
+  }
+
+.hr--web-title {
+		background-color:black;
+		margin:0 0 0 0;
+	}
+
 .aboutMe {
 	position: relative;
 	margin-bottom: 0;
@@ -514,47 +555,6 @@ template {
 			width: 30%
 	}
   }
-
-body {
-	font-family:'Georgia', sans-serif;
-	color: #333;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-strong {
-	font-weight:600;
-}
-
-u {
-	text-decoration: none;
-	border-bottom:solid;
-}
-
-.hr {
-	background-color:black;
-	margin:350px 0 10px 0;
-}
-
-@media (min-width: 990px) {
-
-.hr {
-		margin:450px 0 10px 0
-}
-  }
-
-.hr--web-title {
-		background-color:black;
-		margin:0 0 0 0;
-	}
 
 .experience {
 	position:relative;
@@ -1421,8 +1421,8 @@ u {
 
 .reveal-item {
 	opacity: 0;
-	-webkit-transform:scale(1.5);
-	        transform:scale(1.5);
+	-webkit-transform:scale(1.1);
+	        transform:scale(1.1);
 	-webkit-transition:all 1.5s ease-out;
 	transition:all 1.5s ease-out;
 }

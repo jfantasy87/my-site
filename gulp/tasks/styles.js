@@ -11,7 +11,7 @@ hexrgba = require('postcss-hexrgba');
 
 gulp.task('styles', function(){
 	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssImport, mixins, nestedCSS, cssvars, hexrgba, autoprefixer]))
+		.pipe(postcss([cssImport, mixins, cssvars, nestedCSS, hexrgba, autoprefixer]))
 		.on('error', function(errorInfo) {
 			console.log(errorInfo.toString());
 			this.emit('end');

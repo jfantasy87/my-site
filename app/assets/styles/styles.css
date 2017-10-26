@@ -1,8 +1,8 @@
 @import "normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
-@import "modules/_aboutMe";
 @import "base/_global";
+@import "modules/_aboutMe";
 @import "modules/_experience";
 @import "modules/_wrapper";
 @import "modules/_row";
