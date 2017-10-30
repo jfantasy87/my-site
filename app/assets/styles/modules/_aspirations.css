@@ -110,4 +110,44 @@
 			transform:translateY(16%);
 		}
 	}
+
+	&__future {
+
+		&__certifications {
+			text-align:center;
+			height:30%;
+
+			&__cert-list {
+				
+
+				li {
+					list-style-type: none;
+					margin-right:8%;
+					font-size:1.5rem;
+					cursor:pointer;
+				}
+
+				a {
+					color:#333;
+				}
+
+				a:hover {
+					color:$sunshine;
+				}
+			}
+		}
+
+		&__looking-forward {
+			text-align:center;
+			border-left:solid 5px $purple;
+			height:30%;
+
+			&__text-content {
+				padding:5% 8% 0 8%;
+				line-height:2;
+				text-align:justify;
+				text-indent:30px;
+			}
+		}
+	}
 }
