@@ -115,16 +115,26 @@
 
 		&__certifications {
 			text-align:center;
-			height:30%;
+			display:block;
+
+			&__title {
+				font-size:4.5rem;
+
+				@mixin atMedium {
+					font-size:1.5rem;
+				}
+			}
 
 			&__cert-list {
-				
-
 				li {
 					list-style-type: none;
 					margin-right:8%;
-					font-size:1.5rem;
+					font-size:2.4rem;
 					cursor:pointer;
+
+					@mixin atMedium {
+						font-size:1.5rem;
+					}
 				}
 
 				a {
@@ -139,14 +149,30 @@
 
 		&__looking-forward {
 			text-align:center;
-			border-left:solid 5px $purple;
-			height:30%;
+
+			@mixin atMedium {
+				border-left:solid 5px $purple;
+				font-size:1rem;
+			}
+
+			&__title {
+				font-size:4.5rem;
+
+				@mixin atMedium {
+					font-size:1.5rem;
+				}
+			}
 
 			&__text-content {
-				padding:5% 8% 0 8%;
+				padding:1% 8% 0 8%;
 				line-height:2;
 				text-align:justify;
 				text-indent:30px;
+				font-size:2.4rem;
+
+				@mixin atMedium {
+				font-size:1rem;
+				}
 			}
 		}
 	}

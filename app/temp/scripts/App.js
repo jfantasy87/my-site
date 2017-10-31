@@ -11116,7 +11116,8 @@ var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-var modal = new _Modal2.default();
+new _Modal2.default((0, _jquery2.default)(".modal"), (0, _jquery2.default)(".open-modal"), (0, _jquery2.default)(".modal__close"));
+new _Modal2.default((0, _jquery2.default)(".certificates-modal"), (0, _jquery2.default)(".modern-workflow-link"), (0, _jquery2.default)(".modal__close--certificate"));
 new _RevealOnScroll2.default((0, _jquery2.default)(".future__content-container"), "70%");
 var stickyHeader = new _StickyHeader2.default();
 
@@ -11195,12 +11196,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Modal = function () {
-	function Modal() {
+	function Modal(modalToOpen, modalButton, modalCloseButton) {
 		_classCallCheck(this, Modal);
 
-		this.openModalButton = (0, _jquery2.default)(".open-modal");
-		this.modal = (0, _jquery2.default)(".modal");
-		this.closeModalButton = (0, _jquery2.default)(".modal__close");
+		this.openModalButton = modalButton;
+		this.modal = modalToOpen;
+		this.closeModalButton = modalCloseButton;
 		this.events();
 	}
 
