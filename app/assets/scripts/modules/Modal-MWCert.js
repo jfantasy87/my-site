@@ -1,8 +1,7 @@
 														//ECMA script 6
-
 import $ from 'jquery';
 
-class Modal {
+class ModalMWCert {
 	constructor(modalToOpen, modalButton, modalCloseButton) {
 		this.openModalButton = modalButton;
 		this.modal = modalToOpen;
@@ -26,14 +25,14 @@ class Modal {
 	}
 
 	openModal() {
-		this.modal.addClass("modal--is-visible");
+		this.modal.addClass("certificates-modal--is-visible");
 		return false;
 
 	}
 
 	closeModal() {
-		this.modal.removeClass("modal--is-visible");
+		this.modal.removeClass("certificates-modal--is-visible");
 	}
 }
 
-export default Modal;
+export default ModalMWCert;

@@ -11113,11 +11113,15 @@ var _StickyHeader = __webpack_require__(6);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _ModalMWCert = __webpack_require__(7);
+
+var _ModalMWCert2 = _interopRequireDefault(_ModalMWCert);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
 new _Modal2.default((0, _jquery2.default)(".modal"), (0, _jquery2.default)(".open-modal"), (0, _jquery2.default)(".modal__close"));
-new _Modal2.default((0, _jquery2.default)(".certificates-modal"), (0, _jquery2.default)(".modern-workflow-link"), (0, _jquery2.default)(".modal__close--certificate"));
+new _ModalMWCert2.default((0, _jquery2.default)(".certificates-modal"), (0, _jquery2.default)(".modern-workflow-link"), (0, _jquery2.default)(".certificates-modal__close"));
 new _RevealOnScroll2.default((0, _jquery2.default)(".future__content-container"), "70%");
 var stickyHeader = new _StickyHeader2.default();
 
@@ -11357,6 +11361,73 @@ var StickyHeader = function () {
 }();
 
 exports.default = StickyHeader;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); //ECMA script 6
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ModalMWCert = function () {
+	function ModalMWCert(modalToOpen, modalButton, modalCloseButton) {
+		_classCallCheck(this, ModalMWCert);
+
+		this.openModalButton = modalButton;
+		this.modal = modalToOpen;
+		this.closeModalButton = modalCloseButton;
+		this.events();
+	}
+
+	_createClass(ModalMWCert, [{
+		key: "events",
+		value: function events() {
+			//clicking the open modal button
+			this.openModalButton.click(this.openModal.bind(this));
+			//clicking the X close modal button
+			this.closeModalButton.click(this.closeModal.bind(this));
+			//key press
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: "keyPressHandler",
+		value: function keyPressHandler(escape) {
+			if (escape.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: "openModal",
+		value: function openModal() {
+			this.modal.addClass("certificates-modal--is-visible");
+			return false;
+		}
+	}, {
+		key: "closeModal",
+		value: function closeModal() {
+			this.modal.removeClass("certificates-modal--is-visible");
+		}
+	}]);
+
+	return ModalMWCert;
+}();
+
+exports.default = ModalMWCert;
 
 /***/ })
 /******/ ]);

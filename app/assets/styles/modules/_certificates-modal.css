@@ -1,11 +1,21 @@
 .certificates-modal {
-	visibility: hidden;
+	position:fixed;
+	z-index:6;
+	background-color:rgba(255, 255, 255, .94);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	opacity:0;
+	visibility: hidden;
+	transform:scale(1.5);
+	transition:all .5s ease-out;
 	
 
 	&--is-visible {
-		visibility: visible;
 		opacity:1;
+		visibility: visible;
+		transform: scale(1);
 	}
 
 	&__modern-workflow {
@@ -24,6 +34,29 @@
 			top:50%;
 			left:50%;
 			transform:translateY(-50%) translateX(-50%);
+		}
+	}
+
+	&__close {
+		position:absolute;
+		top:40px;
+		right:40px;
+		font-size:5rem;
+		font-family:sans-serif;
+		transform:scaleX(1.2);
+		font-weight:300;
+		transform-origin:100% 0;
+		color:$purple;
+		cursor:pointer;
+
+		&:hover {
+			color:$sunshine;
+		}
+
+		@mixin atMedium {
+			top:20px;
+			right:20px;
+			font-size:2rem;
 		}
 	}
 }
