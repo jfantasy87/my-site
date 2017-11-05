@@ -964,9 +964,19 @@ a:hover {
 @media (min-width: 990px) {
 
 .aspirations__future__certifications__cert-list li {
-						font-size:1.5rem
+						font-size:1.5rem;
+						-webkit-transform:scale(1);
+						        transform:scale(1);
+						-webkit-transition:all .2s ease-out;
+						transition:all .2s ease-out
 				}
   }
+
+.aspirations__future__certifications__cert-list li:hover {
+					-webkit-transform:scale(1.15);
+					        transform:scale(1.15);
+					text-shadow:2px 2px 5px black;
+				}
 
 .aspirations__future__certifications__cert-list a {
 					color:#333;
@@ -1325,6 +1335,12 @@ a:hover {
 		margin-top:30px;
 		background-color: rgba(66,39,50, .7);
 		padding:10px 0;
+		-webkit-transform:scale(1);
+		        transform:scale(1);
+		-webkit-transition:-webkit-transform .2s ease-out;
+		transition:-webkit-transform .2s ease-out;
+		transition:transform .2s ease-out;
+		transition:transform .2s ease-out, -webkit-transform .2s ease-out;
 	}
 
 @media (min-width: 990px) {
@@ -1338,6 +1354,11 @@ a:hover {
 			padding:0
 	}
   }
+
+.primary-nav li:hover {
+		-webkit-transform:scale(1.15);
+		        transform:scale(1.15);
+	}
 
 .primary-nav a {
 		text-decoration:none;
